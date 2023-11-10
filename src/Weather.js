@@ -67,7 +67,6 @@ export default function Weather() {
               </div>
             </div>
           </div>
-
           <div className="week-weather row">
             <div className="col-2">
               <div className="week-data week-day">Mon</div>
@@ -114,6 +113,25 @@ export default function Weather() {
           </div>
         </div>
       </div>
+      <footer>
+        <a
+          className="gitLink"
+          href="https://github.com/catarinadarosaria/world-clock"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source
+        </a>
+        code by
+        <a
+          className="myWebsite"
+          href="https://catarinarosaria.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Catarina da Rosária
+        </a>
+      </footer>
     </div>
   );
 }
