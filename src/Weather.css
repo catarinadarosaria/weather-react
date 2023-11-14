@@ -1,6 +1,5 @@
 .container {
-  background-color: rgb(195, 225, 255);
-  max-width: 800px;
+  background-color: rgb(13, 120, 247);
   margin: 0 auto;
 }
 ul {
@@ -27,17 +26,27 @@ h3 {
 
 footer {
   text-align: center;
+  color: white;
 }
 
 .weather-app {
   background-color: white;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   margin: 60px 60px 30px 60px;
-  max-width: 100%;
+  max-width: 800px;
   border: 1px solid rgb(223, 216, 216);
   border-radius: 10px;
   padding: 40px 60px 60px 60px;
+  color: rgb(13, 120, 247);
 }
+.city-name {
+  font-size: 48px;
+}
+
+.description {
+  font-size: 24px;
+}
+
 .weather-info {
   margin-top: 40px;
 }
@@ -55,11 +64,6 @@ footer {
   font-size: 16px;
 }
 
-.current-weather img {
-  width: 100%;
-  padding-bottom: 30px;
-  vertical-align: top;
-}
 .date-time {
   font-size: 16px;
 }
@@ -69,27 +73,28 @@ footer {
   margin: 0 auto;
 }
 .precise-weather {
-  font-size: 12px;
+  font-size: 14px;
 }
+
 #search-location-button {
-  background-color: rgb(95, 162, 214);
-  border: 1px solid rgb(95, 162, 214);
+  background-color: rgb(13, 120, 247);
+  border: 1px solid rgb(13, 120, 247);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 200ms ease-in-out;
 }
 #search-location-button:hover {
-  background-color: rgb(53, 112, 158);
-  border: 1px solid rgb(53, 112, 158);
+  background-color: rgb(0, 80, 178);
+  border: 1px solid rgb(0, 80, 178);
 }
 #current-location-button {
-  background-color: rgb(195, 225, 255);
-  border: 1px solid rgb(195, 225, 255);
+  background-color: rgb(123, 182, 255);
+  border: 1px solid rgb(123, 182, 255);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 200ms ease-in-out;
 }
 #current-location-button:hover {
-  background-color: rgb(106, 186, 243);
-  border: 1px solid rgb(106, 186, 243);
+  background-color: rgb(68, 152, 255);
+  border: 1px solid rgb(68, 152, 255);
 }
 .city-bar {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -99,21 +104,26 @@ footer {
   text-align: right;
   margin-right: 0;
 }
+
 .temperature {
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 400;
   line-height: 1;
 }
 a:visited {
   text-decoration: none;
 }
+
+.units {
+  font-size: 18px;
+}
 #celsius {
   text-decoration: none;
-  color: rgb(53, 112, 158);
+  color: rgb(13, 120, 247);
 }
 #fahrenheit {
   text-decoration: none;
-  color: rgb(53, 112, 158);
+  color: rgb(13, 120, 247);
 }
 
 .celsiusClick {
@@ -129,12 +139,12 @@ a:visited {
 }
 
 .gitLink {
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
-  color: rgb(53, 112, 158);
+  color: white;
 }
 .myWebsite {
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
-  color: rgb(53, 112, 158);
+  color: white;
 }
