@@ -5,20 +5,10 @@
 }
 ul {
   list-style: none;
-  padding-left: 0;
+  margin-left: 0 !important;
+  padding: 0 !important;
 }
-.weather-app {
-  background-color: white;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 60px 60px 30px 60px;
-  max-width: 100%;
-  border: 1px solid rgb(223, 216, 216);
-  border-radius: 10px;
-  padding: 40px 60px 60px 60px;
-}
-.weather-info {
-  margin-top: 40px;
-}
+
 h1 {
   font-size: 40px;
   font-weight: 600;
@@ -35,17 +25,34 @@ h3 {
   text-transform: capitalize;
 }
 
+footer {
+  text-align: center;
+}
+
+.weather-app {
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 60px 60px 30px 60px;
+  max-width: 100%;
+  border: 1px solid rgb(223, 216, 216);
+  border-radius: 10px;
+  padding: 40px 60px 60px 60px;
+}
+.weather-info {
+  margin-top: 40px;
+}
+
 .week-data {
   text-align: center;
 }
 .week-day {
-  font-size: 14px;
+  font-size: 18px;
   padding-bottom: 5px;
   font-weight: 600;
 }
 .daily-temperature {
   padding-top: 5px;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .current-weather img {
@@ -102,11 +109,11 @@ a:visited {
 }
 #celsius {
   text-decoration: none;
-  color: #8ebac4;
+  color: rgb(53, 112, 158);
 }
 #fahrenheit {
   text-decoration: none;
-  color: #8ebac4;
+  color: rgb(53, 112, 158);
 }
 
 .celsiusClick {
@@ -120,18 +127,14 @@ a:visited {
   font-size: 12px;
   margin-top: -35px;
 }
-footer {
-  text-align: center;
-}
+
 .gitLink {
   text-decoration: none;
   cursor: pointer;
-  color: rgb(95, 162, 214);
-  padding-right: 5px;
+  color: rgb(53, 112, 158);
 }
 .myWebsite {
   text-decoration: none;
   cursor: pointer;
-  color: rgb(95, 162, 214);
-  padding-left: 5px;
+  color: rgb(53, 112, 158);
 }

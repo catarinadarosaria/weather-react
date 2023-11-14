@@ -1,11 +1,21 @@
 import React from "react";
 import "./Weather.css";
+import axios from "axios";
 
 export default function Weather() {
+  function handleResponse(response) {
+    alert(Math.round(response.data.main.temp));
+  }
+
+  let apiKey = "e60cfe91a731d94cdd654022271b22a3";
+  let city = "Porto";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(url).then(handleResponse);
+
   return (
     <div className="container">
       <div className="weather-app">
-        <form id="search-form" className="mb-3 search-bar">
+        <form id="search-form" className="mb-3 search-bar" onChange>
           <div className="row">
             <div className="col-8">
               <input
@@ -121,14 +131,15 @@ export default function Weather() {
           rel="noreferrer"
         >
           Open-source
-        </a>
-        code by
+        </a>{" "}
+        code by{" "}
         <a
           className="myWebsite"
           href="https://catarinarosaria.com/"
           target="_blank"
           rel="noreferrer"
         >
+          {" "}
           Catarina da Rosária
         </a>
       </footer>
