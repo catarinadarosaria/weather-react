@@ -74,6 +74,7 @@ export default function Weather(props) {
             <div className="header">
               <WeatherInfo data={weatherData} />
             </div>
+            {/*
             <div className="week-weather row">
               <div className="col-2">
                 <div className="week-data week-day">Mon</div>
@@ -117,7 +118,7 @@ export default function Weather(props) {
                   <strong>12º</strong>/8º
                 </div>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
         <footer>
