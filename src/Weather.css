@@ -118,20 +118,12 @@ a:visited {
   font-size: 18px;
 }
 #celsius {
-  text-decoration: none;
   color: rgb(13, 120, 247);
 }
 #fahrenheit {
-  text-decoration: none;
   color: rgb(13, 120, 247);
 }
 
-.celsiusClick {
-  color: black !important;
-}
-.fahrenheitClick {
-  color: black !important;
-}
 .signature {
   text-align: center;
   font-size: 12px;
