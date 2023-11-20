@@ -39,7 +39,7 @@ export default function WeatherIcon(props) {
   const SelectedIcon = iconMapping[props.code];
   return (
     <div className="WeatherIcon">
-      <SelectedIcon size={300} color="rgb(13, 120, 247)" />
+      <SelectedIcon size={props.size} color="rgb(13, 120, 247)" />
     </div>
   );
 }

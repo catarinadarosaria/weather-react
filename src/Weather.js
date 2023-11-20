@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 import axios from "axios";
 
 export default function Weather(props) {
@@ -9,6 +10,7 @@ export default function Weather(props) {
 
   function handleResponse(response) {
     setWeatherData({
+      coordinates: response.data.coord,
       ready: true,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].main,
@@ -74,51 +76,7 @@ export default function Weather(props) {
             <div className="header">
               <WeatherInfo data={weatherData} />
             </div>
-            {/*
-            <div className="week-weather row">
-              <div className="col-2">
-                <div className="week-data week-day">Mon</div>
-                <img src="images/sun.png" alt="Sun" />
-                <div className="week-data daily-temperature">
-                  <strong>9º</strong>/2º
-                </div>
-              </div>
-              <div className="col-2">
-                <div className="week-data week-day">Tue</div>
-                <img src="images/sun-cloud.png" alt="Sun with Clouds" />
-                <div className="week-data daily-temperature">
-                  <strong>10º</strong>/0º
-                </div>
-              </div>
-              <div className="col-2">
-                <div className="week-data week-day">Wed</div>
-                <img src="images/sun-cloud.png" alt="Sun with Clouds" />
-                <div className="week-data daily-temperature">
-                  <strong>17º</strong>/6º
-                </div>
-              </div>
-              <div className="col-2">
-                <div className="week-data week-day">Thu</div>
-                <img src="images/cloud.png" alt="Clouds" />
-                <div className="week-data daily-temperature">
-                  <strong>15º</strong>/11º
-                </div>
-              </div>
-              <div className="col-2">
-                <div className="week-data week-day">Fri</div>
-                <img src="images/rain.png" alt="Rain" />
-                <div className="week-data daily-temperature">
-                  <strong>12º</strong>/10º
-                </div>
-              </div>
-              <div className="col-2">
-                <div className="week-data week-day">Sat</div>
-                <img src="images/sun.png" alt="Sun" />
-                <div className="week-data daily-temperature">
-                  <strong>12º</strong>/8º
-                </div>
-              </div>
-            </div>*/}
+            <Forecast coordinates={weatherData.coordinates} />
           </div>
         </div>
         <footer>
